@@ -105,6 +105,21 @@ return [
                 'controller' => 'MauticSqlConditionsBundle:SqlConditions:execute',
             ],
         ],
+	'api' => [
+		'mautic_api_sqlconditions' => [
+			'standard_entity' => true,
+			'name'            => 'sqlconditions',
+			'path'            => '/api/sqlconditions',
+			'controller'      => 'MauticSqlConditionsBundle:Api\SqlApi',
+		],
+		'mautic_api_sqlconditions' => [
+			'standard_entity' => true,
+			'name'            => 'sqlconditions',
+			'path'            => '/sqlconditions',
+			'controller'      => 'MauticSqlConditionsBundle:Api\SqlApi',
+		],
+
+	],
     ],
     'menu'        => [
         'main' => [
@@ -123,6 +138,7 @@ return [
                 ],
             ],
         ],
+
     ],
     'categories' => [
         'plugin:sqlConditions' => 'mautic.sqlConditions',
